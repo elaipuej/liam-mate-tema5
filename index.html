@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#465bd5">
+  <title>Matemáticas 6.º Primaria</title>
+  <link rel="stylesheet" href="assets/css/estilos.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-content">
+    <div class="logo">📚</div>
+    <h1>Aula de Matemáticas</h1>
+    <p>Aprende · Practica · Supera tus retos</p>
+    <span class="pill">6.º de Primaria</span>
+  </div>
+</header>
+
+<main class="container">
+  <section class="welcome">
+    <h2>¡Hola, estudiante! 👋</h2>
+    <p>Selecciona un tema para comenzar a aprender.</p>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <h2>Mis temas</h2>
+      <span id="topic-count"></span>
+    </div>
+    <div id="topics" class="topic-grid"></div>
+  </section>
+
+  <section class="card progress-card">
+    <h2>🏆 Mi progreso</h2>
+    <div class="stats">
+      <div><strong id="completed">0</strong><span>Temas practicados</span></div>
+      <div><strong id="total-points">0</strong><span>Respuestas correctas</span></div>
+      <div><strong id="best-score">0%</strong><span>Mejor resultado</span></div>
+    </div>
+    <button class="btn btn-light" onclick="resetProgress()">
+      Reiniciar progreso
+    </button>
+  </section>
+</main>
+
+<footer>
+  Aula de Matemáticas · 6.º de Primaria
+</footer>
+</body>
+</html>
